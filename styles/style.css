@@ -1,0 +1,196 @@
+/* fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.ttf');
+}
+.lalezar{
+    font-family: 'lalezar';
+}
+body{
+    font-family: 'Yekan' , sans-serif;
+    font-size: 1rem;
+}
+/* the used color in site  */
+.color{
+    color: #1095c1;
+}
+/* item hover  */
+.item-hover {
+    --b: 0.1em;   /* the thickness of the line */
+    --c: #1095c1; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,#000 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+    background-clip: text,padding-box;
+    transition: .2s var(--_s,0s) linear,background-size .2s calc(.2s - var(--_s,0s));
+  }
+  
+.navbar{
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0 ,0.1);
+}
+  .item-hover:hover {
+    --_p: 100%;
+    --_s: .2s;
+  }
+@media screen and (min-width: 768px) {
+    .position-md-fixed{
+        position: fixed;
+    }
+}
+/* intro-section */
+@media screen and (max-width: 768px) {
+    .intro-section{
+        text-align: center;
+    }
+}
+/* about me styles  */
+.about-me{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    line-height: 40px;
+}
+.coding-img{
+    height: 500px;
+    width: 300px;
+    border-radius: 15px;
+}
+.info{
+    text-align: justify;
+    padding: 10px;
+}
+
+.info-box{
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* counter-box باکس های شمارنده  */
+.counter-box{
+    padding: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+.card-shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* what can i do cards  */
+.card-info{
+    padding: 15px;
+    text-align: justify;
+    color: #6d6d6d;
+    line-height: 30px;
+}
+/* resume  */
+.resume_title{
+    padding: 20px 0;
+}
+/* project images & ther hover  */
+.image{
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: all 0.3s;
+}
+.content:hover{
+    opacity: 1;
+}
+.content h3{
+    color: yellow;
+}
+/* member comments */
+.member-card{
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.member-img{
+    padding: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+} 
+/* companys & hover */
+.company-img{ 
+    cursor: pointer;
+    max-width: 150px;
+    max-height: 100px;
+    transition: all 0.3s;
+}
+.company-img:hover{
+    transform: scale(1.3);
+}
+/* blog , podcast & hover */
+.blog-img{
+    overflow: hidden;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+.download-blog{
+    cursor: pointer;
+    transition: all 0.2s;
+    text-decoration: none;
+    color: black;
+}
+.download-blog:hover{
+    color: #1095c1;
+} 
+/* form & form media query */
+.form{
+    display: inline;
+    width: 40%;
+}
+input{
+    outline: 0;
+    border: 1px solid #c1c1c1;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.text-aria{
+    text-align: start;
+    width: 480px;
+    height: 200px;
+}
+button[type="submit"]{
+    border: 0;
+    padding: 10px 20px;
+}
+@media screen and (max-width: 768px) {
+    .input-list input{
+        width: 100%;
+    }
+}

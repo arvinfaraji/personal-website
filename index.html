@@ -1,0 +1,558 @@
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevin demo</title>
+     <!-- bootstrap cdn -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous">
+     <!-- my css style -->
+     <link rel="stylesheet" href="styles/style.css">
+     <!-- aos animation -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!-- bootstrap icons -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- fontawsome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+  <header class="header">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-3 lalezar" href="#">ar<span class="color">vin</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title fs-2 lalezar" id="offcanvasNavbarLabel">ar<span class="color">vin</span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item px-2">
+                <a id="caret" class="nav-link text-dark" href="#collapseMenu" role="button" data-bs-toggle="collapse" aria-expanded="false">
+                  <i class="bi bi-house fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">خانه</span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-dark" aria-current="page" href="#"> 
+                  <i class="bi bi-person fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">درباره من</span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-dark" href="#">
+                  <i class="bi bi-pc-display fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">خدمات</span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-dark" href="#">
+                  <i class="bi bi-book fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">وبلاگ ها</span>
+                </a>
+              </li>
+              <li class="nav-item px-2">
+                <a class="nav-link text-dark" href="#">
+                  <i class="bi bi-telephone fs-5 d-md-none"></i>
+                  <span class="ms-2 item-hover">ارتباط با من</span>
+                </a>
+              </li>
+              <li class="nav-item px-2 d-md-none">
+                <hr class="my-4">
+                <p>دیجی مدیا <b>در شبکه های اجتماعی</b></p>
+                <div class="row fs-1 w-75">
+                  <div class="col">
+                    <i class="fa-brands fa-linkedin item-hover"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa-brands fa-facebook item-hover"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa-brands fa-instagram item-hover"></i>
+                  </div>
+                  <div class="col">
+                    <i class="fa-brands fa-youtube item-hover"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+      <!-- intro section -->
+      <section class="mt-5 py-5 intro-section">
+        <div class="container">
+          <div class="row align-items-center gy-5">
+            <div class="col-12 col-md-5" data-aos="fade-down">
+              <h1 class="lalezar py-3">آروین فرجی هستم</h1>
+              <h3 class="fw-bold">برنامه نویس و توسعه دهنده <span class="color">فرانت اند</span></h3>
+              <button class="btn btn-outline-primary p-2 my-3">بیاید شروع کنیم</button>
+            </div>
+            <div class="col-12 col-md-6 offset-md-1" data-aos="fade-up">
+              <img src="images/men.jpg" class="img-fluid" alt="men-pic">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- about me -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="lalezar color text-center">من کی هستم؟</h3>
+          <h3 class="about-me">یک توسعه دهنده خوش ذوق که زندگیش با کد ها گره خورده</h3>
+          <div class="row mt-5 gy-5">
+            <div class="col-12 col-md-5">
+              <img src="images/coding.jpg" class="coding-img" alt="coding-pic">
+              <span class="fs-1 fw-bold color">|</span>
+              <span class="fs-3 fw-bold color">7</span>
+              <span class="fw-bold">سال سابقه کاری</span>
+            </div>
+            <div class="col-12 col-md-6 offset-md-1">
+              <h3 class="lalezar">درباره من</h3>
+              <p class="info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+              <div class="info-box">
+                <h4 class="fw-bold">نام :</h4>
+                <span>آروین</span>
+                <h4 class="mt-3 fw-bold">سن :</h4>
+                <span>17</span>
+                <h4 class="mt-3 fw-bold">محل سکونت :</h4>
+                <span>ایران , بوکان</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- skills  -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="text-center lalezar color">مهارت های من</h3>
+          <div class="row mt-5 fw-bold gy-5">
+            <div class="col-12 col-md-6">
+              <h6>HTML</h6>
+              <div class="progress" role="progressbar" aria-label="Example with label">
+                <div class="progress-bar" style="width: 95%">95%</div>
+              </div>
+              <h6 class="mt-5">CSS</h6>
+              <div class="progress" role="progressbar" aria-label="Example with label">
+                <div class="progress-bar" style="width: 75%">75%</div>
+              </div>
+              <h6 class="mt-5">Java Script</h6>
+              <div class="progress" role="progressbar" aria-label="Example with label">
+                <div class="progress-bar" style="width: 90%">90%</div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <h6>PHP</h6>
+              <div class="progress" role="progressbar" aria-label="Example with label">
+                <div class="progress-bar" style="width: 45%">45%</div>
+              </div>
+              <h6 class="mt-5">React</h6>
+              <div class="progress" role="progressbar" aria-label="Example with label">
+                <div class="progress-bar" style="width: 70%">70%</div>
+              </div>
+              <h6 class="mt-5">Node Js</h6>
+              <div class="progress" role="progressbar" aria-label="Example with label">
+                <div class="progress-bar" style="width: 85%">85%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- statics  -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="text-center lalezar mt-5">من سخت کار می کنم تا <span class="color">بهترین</span> شوم</h3>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-5 mt-5 text-center">
+            <div class="col">
+              <div class="counter-box">
+                <h3 class="purecounter fs-1 fw-bold color" data-purecounter-start="0"  data-purecounter-end="75">0</h3>
+                <span class="fw-bold">کار در <br> کشور های مختف</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="counter-box">
+                <h3 class="purecounter fs-1 fw-bold color" data-purecounter-start="0"  data-purecounter-end="190">0</h3>
+                <span class="fw-bold">محصولات <br> دیجیتال</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="counter-box">
+                <h3 class="purecounter fs-1 fw-bold color" data-purecounter-start="0"  data-purecounter-end="3500">0</h3>
+                <span class="fw-bold">پروژه های <br> انجام شده</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="counter-box">
+                <h3 class="purecounter fs-1 fw-bold color" data-purecounter-start="0"  data-purecounter-end="240">0</h3>
+                <span class="fw-bold">برنده جوایز <br> بین المللی</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="text-center lalezar color">مهارت های من</h3>
+          <h3 class="text-center fw-bold">چه کارهایی میتوانم انجام دهم؟</h3>
+          <div class="row row-cols-1 row-cols-md-3 gy-5 text-center mt-5">
+            <div class="col">
+              <div class="card card-shadow" data-aos="fade-up">
+                <i class="bi bi-pc-display fs-1 p-3"></i>
+                <h3 class="lalezar color">برنامه نویسی</h3>
+                <div class="card-body">
+                  <p class="card-info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-shadow" data-aos="fade-up">
+                <i class="bi bi-currency-dollar fs-1 p-3"></i>
+                <h3 class="lalezar color">دیجیتال مارکتینگ</h3>
+                <div class="card-body">
+                  <p class="card-info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-shadow" data-aos="fade-up">
+                <i class="bi bi-stack fs-1 p-3"></i>
+                <h3 class="lalezar color">طراحی گرافیک</h3>
+                <div class="card-body">
+                  <p class="card-info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-shadow" data-aos="fade-up">
+                <i class="bi bi-plus-slash-minus fs-1 p-3"></i>
+                <h3 class="lalezar color">تدریس</h3>
+                <div class="card-body">
+                  <p class="card-info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-shadow" data-aos="fade-up">
+                <i class="bi bi-patch-question fs-1 p-3"></i>
+                <h3 class="lalezar color">مشاوره</h3>
+                <div class="card-body">
+                  <p class="card-info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card card-shadow" data-aos="fade-up">
+                <i class="bi bi-globe fs-1 p-3"></i>
+                <h3 class="lalezar color">ترجمه</h3>
+                <div class="card-body">
+                  <p class="card-info">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- resome -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h2 class="text-center lalezar color ">رزومه</h2>
+          <div class="row mt-5 gy-5">
+            <div class="col-12 col-md-6" data-aos="fade-up">
+              <h3 class="lalezar">سابقه کاری</h3>
+              <div class="resume_title">
+                <h4>برنامه نویس فرانت اند<span class="fs-5 ps-3 text-muted">(1399 - الآن)</span></h4>
+                <span class="company">شرکت دیجی کالا</span>
+               </div>
+               <div class="resume_title">
+                <h4>طراح گرافیک<span class="fs-5 ps-3 text-muted">(1397 - 1400)</span></h4>
+                <span class="company">شرکت صبا ایده</span>
+               </div>
+               <div class="resume_title">
+                <h4>طراح وب<span class="fs-5 ps-3 text-muted">(1399 - 1401)</span></h4>
+                <span class="company">پارک فناوری</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos="fade-up">
+              <h3 class="lalezar">تحصیلات</h3>
+              <div class="resume_title">
+                <h4>دانشگاه آکسفورد<span class="fs-5 ps-3 text-muted">(1379 - 1386)</span></h4>
+                <span class="company">کارشناسی ارشد</span>
+               </div>
+               <div class="resume_title">
+                <h4>دانشگاه شریف<span class="fs-5 ps-3 text-muted">(1397 - 1400)</span></h4>
+                <span class="company">مدرک فوق لیسانس</span>
+               </div>
+               <div class="resume_title">
+                <h4>دانشگاه کمبریج<span class="fs-5 ps-3 text-muted">(1399 - 1401)</span></h4>
+                <span class="company">فوق دیپلم</span>
+              </div>
+            </div>
+      </section>
+
+      <!-- projects -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="text-center lalezar color">نمونه کارها</h3>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5 mt-5 text-center">
+            <div class="col">
+              <div class="project" data-aos="fade-left">
+                <div class="image">
+                  <img src="images/project.png" alt="project-img">
+                  <div class="content">
+                    <h3>پروژه اول</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="project" data-aos="fade-left">
+                <div class="image">
+                  <img src="images/project.png" alt="project-img">
+                  <div class="content">
+                    <h3>پروژه دوم</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="project" data-aos="fade-left">
+                <div class="image">
+                  <img src="images/project.png" alt="project-img">
+                  <div class="content">
+                    <h3>پروژه سوم</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="project" data-aos="fade-left">
+                <div class="image">
+                  <img src="images/project.png" alt="project-img">
+                  <div class="content">
+                    <h3>پروژه چهارم</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="project" data-aos="fade-left">
+                <div class="image">
+                  <img src="images/project.png" alt="project-img">
+                  <div class="content">
+                    <h3>پروژه پنجم</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="project" data-aos="fade-left">
+                <div class="image">
+                  <img src="images/project.png" alt="project-img">
+                  <div class="content">
+                    <h3>پروژه ششم</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- comments -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="text-center lalezar color">آنچه شما می گویید</h3>
+          <div class="row mt-5 text-center">
+            <div class="col">
+              <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleInterval" style="background-color: #1095c1;" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleInterval" style="background-color: #1095c1;" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleInterval" style="background-color: #1095c1;" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleInterval" style="background-color: #1095c1;" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleInterval" style="background-color: #1095c1;" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <div class="member-card">
+                      <img src="images/member1.jpg" class="member-img" alt="...">
+                      <div class="card-body">
+                        <h3 class="lalezar color py-2">کریم احمدی</h3>
+                        <h5 class="fw-bold">مدرس فرانت اند</h5>
+                        <p class="fw-bold p-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <div class="member-card">
+                      <img src="images/member2.jpg" class="member-img" alt="...">
+                      <div class="card-body">
+                        <h3 class="lalezar color py-3">آروین فرجی</h3>
+                        <h5 class="fw-bold">مالک شرکت نکست ستپ</h5>
+                        <p class="fw-bold p-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <div class="member-card">
+                      <img src="images/member3.jpg" class="member-img" alt="..." >
+                      <div class="card-body">
+                        <h3 class="lalezar color py-3">مینا کریمی</h3>
+                        <h5 class="fw-bold">گرافیست</h5>
+                        <p class="fw-bold p-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <div class="member-card">
+                      <img src="images/member4.jpg" class="member-img" alt="..." >
+                      <div class="card-body">
+                        <h3 class="lalezar color py-3">سوسن رحیم زاده</h3>
+                        <h5 class="fw-bold">حسابدار</h5>
+                        <p class="fw-bold p-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <div class="member-card">
+                      <img src="images/member5.jpg" class="member-img" alt="..." >
+                      <div class="card-body">
+                        <h3 class="lalezar color py-3">اسماعیل فرهانی</h3>
+                        <h5 class="fw-bold">ایده پرداز</h5>
+                        <p class="fw-bold p-3">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- companys -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="text-center lalezar color">شرکا</h3>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-5 mt-5">
+            <div class="col">
+              <img src="images/company1.png" class="company-img" alt="">
+            </div>
+            <div class="col">
+              <img src="images/company2.png" class="company-img" alt="">
+            </div>
+            <div class="col">
+              <img src="images/company3.png" class="company-img" alt="">
+            </div>
+            <div class="col">
+              <img src="images/company4.png" class="company-img" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- podcast -->
+      <section class="py-5 px-3">
+        <div class="container">
+          <h3 class="text-center lalezar color">پادکست و وبلاگ ها</h3>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5 mt-5">
+            <div class="col">
+              <div class="card">
+                <img src="images/podcast1.jpg" class="blog-img" alt="...">
+                <div class="card-body">
+                  <a href="#" class="fs-3 lalezar py-2 download-blog">گرافیک</a>
+                  <span class="px-3 text-muted">15 خرداد 1399</span>
+                  <p class=" fw-bold py-2">پادکست اول</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/podcast2.jpg" class="blog-img" alt="...">
+                <div class="card-body">
+                  <a href="#" class="fs-3 lalezar py-2 download-blog">هوش مصنوعی</a>
+                  <span class="px-3 text-muted">8 مهر 1400</span>
+                  <p class=" fw-bold py-2">پادکست دوم</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="images/podcast3.jpg" class="blog-img" alt="...">
+                <div class="card-body">
+                  <a href="#" class="fs-3 lalezar py-2 download-blog">بازار کار</a>
+                  <span class="px-3 text-muted">22 فروردین 1402</span>
+                  <p class=" fw-bold py-2">پادکست سوم</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <footer>
+        <section class="py-5 px-3">
+          <div class="container">
+            <h3 class="text-center lalezar color">ارتباط با من</h3>
+            <div class="row gy-5 mt-5">
+              <div class="col-12 col-md-5">
+                <span class="fs-4">
+                  <i class="bi bi-geo-alt color"></i>
+                  آدرس
+                </span>
+                <p>ایران , بوکان</p><br>
+                <span class="fs-4">
+                  <i class="bi bi-envelope-at color"></i>
+                  تلفن
+                </span>
+                <p>9000000000 98+</p><br>
+                <span class="fs-4">
+                  <i class="bi bi-telephone fs-5 color"></i>
+                  ایمیل
+                </span>
+                <p>abcdefg@gmail.com</p>
+              </div>
+              <div class="col-12 col-md-6 offset-md-1">
+                <form action="#">
+                    <div class="input-list">
+                      <input type="text" placeholder="نام">
+                      <input type="text" placeholder="ایمیل">
+                    </div>
+                    <div class="input-list ">
+                      <input type="text" placeholder="متن پیام" class="text-aria">
+                    </div>
+                    <button type="submit" class="item-hover">ارسال</button>
+                </form>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+    <!-- links  -->
+    <section>
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- purecounter -->
+        <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+        <!-- my js flie -->
+        <script src="js/code.js"></script>
+    </section>
+</body>
+</html>
